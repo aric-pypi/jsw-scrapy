@@ -8,8 +8,6 @@ pip install jsw-scrapy -U
 
 ## usage
 ```python
-import jsw_scrapy as nx
-
-## common methods
-nx.includes([1,2,3], 2) # => True
+from jsw_scrapy.spiders.base_spider import BaseSpider
+from jsw_scrapy.pipelines.base_pipeline import BasePipeline
 ```
