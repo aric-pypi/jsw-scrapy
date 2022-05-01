@@ -1,0 +1,25 @@
+{
+  "name": "@jswork/jsw-scrapy",
+  "private": true,
+  "description": "Jsw for scrapy.",
+  "scripts": {
+    "test": "poetry run pytest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aric-pypi/jsw-scrapy.git"
+  },
+  "keywords": [
+    "jswork",
+    "nx",
+    "next",
+    "toolkit",
+    "python"
+  ],
+  "author": "afeiship",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aric-pypi/jsw-scrapy/issues"
+  },
+  "homepage": "https://github.com/aric-pypi/jsw-scrapy#readme"
+}
