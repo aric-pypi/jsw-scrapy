@@ -31,3 +31,10 @@ class BasePipeline:
         entity.update(**item) if item else None
         entity.save()
         return item
+
+    def fill_entity(self, **kwargs):
+        entity_class = kwargs.get('entity_class')
+        item = kwargs.get('item')
+        entity = entity_class()
+        entity.fill(**item)
+        entity.save()
