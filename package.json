@@ -1,5 +1,5 @@
 {
-  "name": "@jswork/jsw-scrapy",
+  "name": "jsw-scrapy",
   "private": true,
   "description": "Jsw for scrapy.",
   "scripts": {
