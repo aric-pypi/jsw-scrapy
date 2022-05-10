@@ -16,11 +16,13 @@ class BaseSpider(scrapy.Spider):
         entity_class = kwargs.get('entity_class')
         # optional:
         crawled = kwargs.get('crawled', {'is_crawled': False})
+        options = crawled.merge(kwargs.get('options', {}))
         limit = kwargs.get('limit', None)
+
         if limit:
-            return entity_class.where(crawled).take(limit).get()
+            return entity_class.where(options).take(limit).get()
         else:
-            return entity_class.where(crawled).get()
+            return entity_class.where(options).get()
 
     def update_crawled(self, **kwargs):
         record = kwargs.get('record')
