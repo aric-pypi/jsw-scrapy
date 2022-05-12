@@ -1,5 +1,5 @@
 from itemadapter import ItemAdapter
-
+import jsw_nx as nx
 
 class BasePipeline:
     ENTITY_MAPPING = {}

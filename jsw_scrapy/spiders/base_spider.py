@@ -25,7 +25,7 @@ class BaseSpider(scrapy.Spider):
         # crawl + optional:
         crawled = kwargs.get('crawled', {'is_crawled': False})
         crawling_opts = {'is_crawling': False} if cls.support_crawling else {}
-        options = crawled.merge(kwargs.get('options', crawling_opts))
+        options = nx.mix(crawled,kwargs.get('options', crawling_opts))
         limit = kwargs.get('limit', None)
 
         if limit:
