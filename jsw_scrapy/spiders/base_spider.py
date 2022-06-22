@@ -6,7 +6,7 @@ from fake_useragent import UserAgent
 class BaseSpider(scrapy.Spider):
     handle_httpstatus_list = [400]
     url = None
-    ua = UserAgent()
+    ua = UserAgent(use_cache_server=False)
     ua_pc = 'Mozilla/5.0 zgrab/0.x'
     ua_mobile = 'Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) By aric.zheng/0.x'
     ua_random = ua.chrome
