@@ -9,6 +9,16 @@ class BasePeeweeSpider:
     support_crawling = False
 
     @classmethod
+    def get_un_crawled(cls, **kwargs):
+        entity_class = kwargs.get('entity_class')
+        limit = kwargs.get('limit', None)
+        if limit:
+            records = entity_class.select().where(entity_class.is_crawled == False).limit(limit)
+        else:
+            records = entity_class.select().where(entity_class.is_crawled == False)
+        return records
+
+    @classmethod
     def update_crawled(cls, **kwargs):
         record = kwargs.get('record')
         crawled = kwargs.get('crawled', 'is_crawled')
