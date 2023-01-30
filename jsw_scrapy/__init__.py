@@ -2,6 +2,9 @@
 from jsw_scrapy.spiders.base_spider import BaseSpider
 from jsw_scrapy.spiders.base_peewee_spider import BasePeeweeSpider
 
+# helper
+from jsw_scrapy.helpers.alioss_store import AliOssStore
+
 # pipeline
 from jsw_scrapy.pipelines.base_pipeline import BasePipeline
 
