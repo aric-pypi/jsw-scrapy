@@ -9,10 +9,6 @@ homepage = "https://js.work"
 
 [tool.poetry.dependencies]
 python = "^3.7"
-psutil = "^5.9.0"
-"ruamel.yaml" = "^0.17.21"
-bs4 = "^0.0.1"
-jsw-nx = "^1.0.110"
 oss2 = "^2.16.0"
 
 [tool.poetry.dev-dependencies]
